@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+body {
+    margin: 0;
+    background: url('../img/watercolour-4116932.png');
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-blend-mode: color-burn;
+    background-color: #e4f3fc;
+}
+
+footer {
+    background-color: #424242;
+    font-family: 'Shadows Into Light', cursive;   
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #424242;
+    top: 0;
+    width: 100vw;
+}
+
+dialog {
+    position: fixed;
+    top: 0;
+    margin: 0;
+}
+
+#alert-message {
+    animation: 1s ease-out 0s 1 normal none running show-alert;
+}
+
+@keyframes show-alert {
+    from { transform: translateX(22vw); }
+    to { transform: translateX(0vw); }
+}

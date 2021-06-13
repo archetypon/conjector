@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ppp:</ppp#> .
+
+rdf:HTML ppp:hasTemplate "html".
+rdf:langString ppp:hasTemplate "${subject} è in linguaggio ${object}".
+rdf:PlainLiteral ppp:hasTemplate "testo pieno".
+rdf:type ppp:hasTemplate "${subject} è un/a ${object}".
+rdf:Property ppp:hasTemplate "proprietà".
+rdf:Statement ppp:hasTemplate "affermazione".
+rdf:subject ppp:hasTemplate "${subject} è soggetto di ${object}".
+rdf:predicate ppp:hasTemplate "${subject} è predicato di ${object}".
+rdf:object ppp:hasTemplate "${subject} è oggetto di ${object}".
+rdf:Bag ppp:hasTemplate "contenitore non ordinato".
+rdf:Seq ppp:hasTemplate "contenitore ordinato".
+rdf:Alt ppp:hasTemplate "contenitore di alternative".
+rdf:value ppp:hasTemplate "${subject} ha valore ${object}".
+rdf:List ppp:hasTemplate "lista".
+rdf:nil ppp:hasTemplate "vuoto".
+rdf:first ppp:hasTemplate "${subject} è il primo di ${object}".
+rdf:rest ppp:hasTemplate "${subject} è la parte rimanente di ${object}".
+rdf:XMLLiteral ppp:hasTemplate "XML literal".
+rdf:JSON ppp:hasTemplate "JSON".
+rdf:CompoundLiteral ppp:hasTemplate "letterale composto".
+rdf:language ppp:hasTemplate "${subject} è in lingua ${object}".
+rdf:direction ppp:hasTemplate "${subject} ha direzione ${object}".
+rdf:Label ppp:hasTemplate "Esiste ${object}".

@@ -1,0 +1,81 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ppp:</ppp#> .
+
+owl:AllDifferent ppp:hasTemplate "individui differenti" .
+owl:AllDisjointClasses ppp:hasTemplate "elementi disgiunti" .
+owl:AllDisjointProperties ppp:hasTemplate "proprietà disgiunte" .
+owl:Annotation ppp:hasTemplate "annotazione" .
+owl:AnnotationProperty ppp:hasTemplate "proprietà annotate" .
+owl:AsymmetricProperty ppp:hasTemplate "proprietà asimmetrica" .
+owl:Axiom ppp:hasTemplate "assioma" .
+owl:Class ppp:hasTemplate "classe" .
+owl:DataRange ppp:hasTemplate "range di date" .
+owl:DatatypeProperty ppp:hasTemplate "data" .
+owl:DeprecatedClass ppp:hasTemplate "classe deprecate" .
+owl:DeprecatedProperty ppp:hasTemplate "proprietà deprecata" .
+owl:FunctionalProperty ppp:hasTemplate "proprietà funzionale" .
+owl:InverseFunctionalProperty ppp:hasTemplate "proprietà funzionale inversa" .
+owl:IrreflexiveProperty ppp:hasTemplate "proprietà non riflessiva" .
+owl:NamedIndividual ppp:hasTemplate "nominati individualmente" .
+owl:NegativePropertyAssertion ppp:hasTemplate "asserzione negativa" .
+owl:Nothing ppp:hasTemplate "nulla" .
+owl:ObjectProperty ppp:hasTemplate "proprietà oggetto" .
+owl:Ontology ppp:hasTemplate "ontologia" .
+owl:OntologyProperty ppp:hasTemplate "proprietà ontologica" .
+owl:ReflexiveProperty ppp:hasTemplate "proprietà riflessiva" .
+owl:Restriction ppp:hasTemplate "restrizione" .
+owl:SymmetricProperty ppp:hasTemplate "proprietà simmetrica" .
+owl:TransitiveProperty ppp:hasTemplate "proprietà transitiva" .
+owl:Thing ppp:hasTemplate "cosa" .
+owl:allValuesFrom ppp:hasTemplate "${subject} restringe tutti i valori da ${object}" .
+owl:annotatedProperty ppp:hasTemplate "${object} è una proprietà di ${subject}" .
+owl:annotatedSource ppp:hasTemplate "${object} è una fonte di ${subject}" .
+owl:annotatedTarget ppp:hasTemplate "${object} è un obiettivo di ${subject}" .
+owl:assertionProperty ppp:hasTemplate "${object} è una proprietà di ${subject}" .
+owl:backwardCompatibleWith ppp:hasTemplate "${subject} è retrocompatibile con ${object}" .
+owl:AnnotationProperty ppp:hasTemplate "proprietà" .
+owl:bottomDataProperty ppp:hasTemplate "${object} non relaziona tutti i ${subject}" .
+owl:bottomObjectProperty ppp:hasTemplate "${object} non relaziona tutti i ${subject}" .
+owl:cardinality ppp:hasTemplate "${subject} ha cardinalità ${object}" .
+owl:complementOf ppp:hasTemplate "${subject} è un complemento di ${object}" .
+owl:datatypeComplementOf ppp:hasTemplate "${subject} è un complemento di ${object}" .
+owl:deprecated ppp:hasTemplate "${subject} viene definito deprecato da ${object}" .
+owl:differentFrom ppp:hasTemplate "${subject} è differente da ${object}" .
+owl:disjointUnionOf ppp:hasTemplate "${subject} è un'unione disgiunta di ${object}" .
+owl:disjointWith ppp:hasTemplate "${subject} è disgiunto da ${object}" .
+owl:distinctMembers ppp:hasTemplate "${object} sono membri distinti di ${subject}" .
+owl:equivalentClass ppp:hasTemplate "${object} è equivalente a ${subject}" .
+owl:equivalentProperty ppp:hasTemplate "${subject} ha proprietà equivalenti a ${object}" .
+owl:hasKey ppp:hasTemplate "${object} compone la chiave ${subject}" .
+owl:hasSelf ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:hasValue ppp:hasTemplate "${subject} ha valore ${object}" .
+owl:imports ppp:hasTemplate "${subject} importa ${object}" .
+owl:incompatibleWith ppp:hasTemplate "${subject} non è compatibile con ${object}" .
+owl:intersectionOf ppp:hasTemplate "${subject} è un'intersezione di ${object}" .
+owl:inverseOf ppp:hasTemplate "${subject} è l'inverso di' ${object}" .
+owl:maxCardinality ppp:hasTemplate "${subject} ha cardinalità massima ${object}" .
+owl:maxQualifiedCardinality ppp:hasTemplate "${subject} ha cardinalità massima qualificata ${object}" .
+owl:members ppp:hasTemplate "${object} sono membri di ${subject}" .
+owl:minCardinality ppp:hasTemplate "${subject} ha cardinalità minima ${object}" .
+owl:minQualifiedCardinality ppp:hasTemplate "${subject} ha cardinalità minima qulificata ${object}" .
+owl:onClass ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:onDataRange ppp:hasTemplate "${subject} ha range ${object}" .
+owl:onDatatype ppp:hasTemplate "${subject} può essere ${object}" .
+owl:oneOf ppp:hasTemplate "${subject} è uno di ${object}" .
+owl:onProperties ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:onProperty ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:priorVersion ppp:hasTemplate "${object} è una precedente versione di ${subject}" .
+owl:propertyChainAxiom ppp:hasTemplate "${subject} è costituito da ${object}" .
+owl:propertyDisjointWith ppp:hasTemplate "${subject} ha proprietà disgiunte da ${object}" .
+owl:qualifiedCardinality ppp:hasTemplate "${subject} ha cardinalità qualificata ${object}" .
+owl:sameAs ppp:hasTemplate "${subject} è identico a ${object}" .
+owl:someValuesFrom ppp:hasTemplate "${subject} ha alcuni valori di ${object}" .
+owl:sourceIndividual ppp:hasTemplate "${object} si riferisce a ${subject}" .
+owl:targetIndividual ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:targetValue ppp:hasTemplate "${subject} ha come valore obiettivo ${object}" .
+owl:topDataProperty ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:topObjectProperty ppp:hasTemplate "${subject} si riferisce a ${object}" .
+owl:unionOf ppp:hasTemplate "${subject} è l'unione di ${object}" .
+owl:versionInfo ppp:hasTemplate "informazioni sulla versione di ${subject}: ${object}" .
+owl:versionIRI ppp:hasTemplate "Versione IRI di ${subject}: ${object}" .
+owl:withRestrictions ppp:hasTemplate "${subject} ha restrizione ${object}" .

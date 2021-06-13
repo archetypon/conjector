@@ -1,0 +1,25 @@
+@prefix foaf:<http://xmlns.com/foaf/0.1/> .
+@prefix ppp:</ppp#> .
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+foaf:name ppp:hasTemplate "${subject} si chiama ${object}".
+foaf:title ppp:hasTemplate "${object} è il titolo di ${subject}".
+foaf:img ppp:hasTemplate "${object} è un'immagine di ${subject}".
+foaf:depiction ppp:hasTemplate "${object} raffigura ${subject}".
+foaf:depicts ppp:hasTemplate "${subject} raffigura ${object}".
+foaf:familyName ppp:hasTemplate "${subject} conosciuto come ${object}".
+foaf:givenName ppp:hasTemplate "${subject} viene chiamato ${object}".
+foaf:knows ppp:hasTemplate "${subject} conosce ${object}".
+foaf:based_near ppp:hasTemplate "${subject} è vicino a ${object}".
+foaf:age ppp:hasTemplate "${subject} ha ${object} anni".
+foaf:made ppp:hasTemplate "${subject} ha creato ${object}".
+foaf:maker ppp:hasTemplate "${object} ha creato ${subject}".
+foaf:primaryTopic ppp:hasTemplate "${subject} parla di ${object}".
+foaf:primaryTopicOf ppp:hasTemplate "${object} parla di ${subject}".
+foaf:member ppp:hasTemplate "${object} è membro di ${subject}" .
+foaf:Agent rdf:Label "agente".
+foaf:Person rdf:Label "persona".
+foaf:Project rdf:Label "progetto".
+foaf:Organization rdf:Label "organizzazione".
+foaf:Group rdf:Label "gruppo".
+foaf:Document rdf:Label "documento".

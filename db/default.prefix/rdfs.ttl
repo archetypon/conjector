@@ -1,0 +1,18 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ppp:</ppp#> .
+
+rdfs:Resource ppp:hasTemplate "risorsa" .
+rdfs:Class ppp:hasTemplate "classe" .
+rdfs:subClassOf ppp:hasTemplate "${subject} è una sottoclasse di ${object}" .
+rdfs:subPropertyOf ppp:hasTemplate "${subject} è una sottoproprietà di ${object}" .
+rdfs:comment ppp:hasTemplate "${object} è un commento a ${subject}" .
+rdfs:label ppp:hasTemplate "${subject} viene etichettato ${object}" .
+rdfs:domain ppp:hasTemplate "${subject} appartiene al dominio ${object}" .
+rdfs:range ppp:hasTemplate "${subject} ha range ${object}" .
+rdfs:seeAlso ppp:hasTemplate "con riferimento a ${subject} vedere anche ${object}" .
+rdfs:isDefinedBy ppp:hasTemplate "${subject} è definito da ${object}" .
+rdfs:Literal ppp:hasTemplate "letterale" .
+rdfs:Container ppp:hasTemplate "contenitore" .
+rdfs:ContainerMembershipProperty ppp:hasTemplate "membro" .
+rdfs:member ppp:hasTemplate "${object} è membro di ${subject}" .
+rdfs:Datatype ppp:hasTemplate "tipo di dato" .

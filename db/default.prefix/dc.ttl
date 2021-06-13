@@ -1,0 +1,58 @@
+@prefix dc:<http://purl.org/dc/terms/>.
+@prefix ppp:</ppp#>.
+
+dc:abstract ppp:hasTemplate "${object} è un sommario di ${subject}".
+dc:accessRights ppp:hasTemplate "${object} può accedere a ${subject}".
+dc:accrualMethod ppp:hasTemplate "${subject} viene aggiunto tramite ${object}".
+dc:accrualPeriodicity ppp:hasTemplate "${subject} viene aggiunto ogni ${object}".
+dc:accrualPolicy ppp:hasTemplate "${subject} viene aggiunto secondo la politica ${object}".
+dc:alternative ppp:hasTemplate "${subject} viene detto anche ${object}".
+dc:audience ppp:hasTemplate "${subject} è rivolto a un'audience di ${object}".
+dc:available ppp:hasTemplate "${subject} è o sarà disponibile a partire da ${object}".
+dc:bibliographicCitation ppp:hasTemplate "${object} referenzia ${subject}".
+dc:conformsTo ppp:hasTemplate "${subject} si conforma allo standard {object}".
+dc:contributor ppp:hasTemplate "${object} è contributore di ${subject}".
+dc:coverage ppp:hasTemplate "${subject} parla di ${object}".
+dc:created ppp:hasTemplate "${subject} è stato creato nel ${object}".
+dc:creator ppp:hasTemplate "${subject} è stato creato da ${object}".
+dc:date ppp:hasTemplate "${subject} in data ${object}".
+dc:dateAccepted ppp:hasTemplate "${subject} è stata accettata il ${object}".
+dc:dateCopyrighted ppp:hasTemplate "${subject} è protetto da copyright del ${object}".
+dc:dateSubmitted ppp:hasTemplate "${subject} è stato inviato il ${object}".
+dc:description ppp:hasTemplate "descrizione di ${subject}: ${object}".
+dc:educationLevel ppp:hasTemplate "${subject} ha/aveva un livello di educazione ${object}".
+dc:extent ppp:hasTemplate "${subject} ha durata/lunghezza ${object}".
+dc:format ppp:hasTemplate "${subject} è disponibile in formato ${object}".
+dc:hasFormat ppp:hasTemplate "${subject} è disponibile in formato ${object}".
+dc:hasPart ppp:hasTemplate "${subject} è parte di ${object}".
+dc:hasVersion ppp:hasTemplate "${subject} è una edizione di ${object}".
+dc:identifier ppp:hasTemplate "${obbject} identifica ${subject}".
+dc:instructionalMethod ppp:hasTemplate "${subject} supporta la formazione in ${object}".
+dc:isFormatOf ppp:hasTemplate "${subject} è un formato di ${object}".
+dc:isPartOf ppp:hasTemplate "${subject} è parte di ${object}".
+dc:isReferencedBy ppp:hasTemplate "${subject} è referenziato da ${object}".
+dc:isReplacedBy ppp:hasTemplate "${subject} è stato sostituito da ${object}".
+dc:isRequiredBy ppp:hasTemplate "${subject} è richiesto da ${object}".
+dc:issued ppp:hasTemplate "${subject} è stato rilasciato il ${object}".
+dc:isVersionOf ppp:hasTemplate "${subject} è una edizione di ${object}".
+dc:language ppp:hasTemplate "${subject} è in lingua ${object}".
+dc:license ppp:hasTemplate "${subject} ha come licenza ${object}".
+dc:mediator ppp:hasTemplate "${subject} il cui accesso è mediato da ${object}".
+dc:medium ppp:hasTemplate "${subject} è disponibile tramite ${object}".
+dc:modified ppp:hasTemplate "${subject} è stato modificato il ${object}".
+dc:provenance ppp:hasTemplate "${subject} è proveniente da ${object}".
+dc:publisher ppp:hasTemplate "${subject} è stato pubblicato da ${object}".
+dc:references ppp:hasTemplate "${subject} referenzia ${object}".
+dc:relation ppp:hasTemplate "${subject} è correlato a ${object}".
+dc:replaces ppp:hasTemplate "${subject} rimpiazza ${object}".
+dc:requires ppp:hasTemplate "${subject} richiede ${object}".
+dc:rights ppp:hasTemplate "${subject} ha diritti ${object}".
+dc:rightsHolder ppp:hasTemplate "${subject} è detentore dei diritti di ${object}".
+dc:source ppp:hasTemplate "${subject} deriva da ${object}".
+dc:spatial ppp:hasTemplate "${subject} spazia relativamente a ${object}".
+dc:subject ppp:hasTemplate "${subject} parla di ${object}".
+dc:tableOfContents ppp:hasTemplate "${subject} la cui tabella dei contenuti è ${object}".
+dc:temporal ppp:hasTemplate "${subject} temporaneamente ${object}".
+dc:title ppp:hasTemplate "Il titolo originale de ${subject} è ${object}".
+dc:type ppp:hasTemplate "${subject} è un ${object}".
+dc:valid ppp:hasTemplate "${subject} valida nelle date ${object}".
