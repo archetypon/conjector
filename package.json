@@ -1,11 +1,11 @@
 {
-  "name": "demo",
-  "version": "0.0.1",
+  "name": "conjector",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "webpack --progress --color && node ./bin/www localhost 8000",
+    "start": "webpack --config webpack.config.prod.js --progress --color && node ./bin/www",
     "serve": "npm-run-all --parallel serve:webpack serve:nodemon",
-    "serve:webpack": "webpack --mode=development --progress --color --watch",
+    "serve:webpack": "webpack --config webpack.config.dev.js --mode=development --progress --color --watch",
     "serve:nodemon": "nodemon -L ./bin/www",
     "test": "mocha"
   },

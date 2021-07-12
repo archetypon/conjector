@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-
+const rsg = require('../../models/util/random.string.generator');
 const UserList = require('../../models/users.list');
 
 const rndSec = rsg.randomString(12);
