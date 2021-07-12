@@ -11,13 +11,22 @@ var options = {
 const db = level(location, options);
 
 db.open(null, (error) => {
-    if(error)
+    if (error)
         console.log(error);
 });
 
-var UsersConnector = function() {
+var UsersConnector = function () {
+
+    let checkStat = () => {
+        return new Promise((resolve) => {
+            while (db.db.status == 'opening') { }
+            resolve();
+        })
+    }
+
     return {
         serialize: async function (user) {
+            await checkStat();
             await db.put(user.getName(), user.toJSON());
         },
 
@@ -25,15 +34,17 @@ var UsersConnector = function() {
             return new Promise(prom => {
                 if (!user)
                     return;
-
-                db.get(user, (err, value) => {
-                    if (err)
-                        prom(null);
-                    else {
-                        let ret = value;
-                        prom(ret);
-                    }
-                });
+                checkStat()
+                    .then(() => {
+                        db.get(user, (err, value) => {
+                            if (err)
+                                prom(null);
+                            else {
+                                let ret = value;
+                                prom(ret);
+                            }
+                        });
+                    })
             });
         }
     }

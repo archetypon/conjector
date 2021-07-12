@@ -1,5 +1,5 @@
 const Quadstore = require('quadstore').Quadstore;
-const leveldown = require('leveldown'); 
+const leveldown = require('leveldown');
 const path = require('path');
 
 const location = path.join(__dirname, '../../db/rdf');
@@ -16,25 +16,35 @@ store.open();
 
 var GraphyConnector = function () {
 
+    let checkStat = () => {
+        return new Promise((resolve) => {
+            while (store.db.status == 'opening') { }
+            resolve();
+        })
+    }
+
     return {
-        serialize: async function(quad) {
+        serialize: async function (quad) {
+            await checkStat();
             await store.multiPut(quad)
-            .catch((err) => {
-                store.put(quad)
                 .catch((err) => {
-                    console.log(err);
-                })
-            });
+                    store.put(quad)
+                        .catch((err) => {
+                            console.log(err);
+                        })
+                });
         },
 
-        patch: async function(newQuad, oldQuad) {
+        patch: async function (newQuad, oldQuad) {
+            await checkStat();
             await store.patch(oldQuad, newQuad)
-            .catch((err) => {
-                console.log(err, 1);
-            });
+                .catch((err) => {
+                    console.log(err, 1);
+                });
         },
 
-        read: async function(match) {
+        read: async function (match) {
+            await checkStat();
             let { items } = await store.get(match)
                 .catch((err) => {
                     console.log(err);
@@ -42,23 +52,26 @@ var GraphyConnector = function () {
             return items;
         },
 
-        getAll: async function() {
+        getAll: async function () {
+            await checkStat();
             let { items } = await store.get({})
-            .catch((err) => {
-                console.log(err);
-            });;
+                .catch((err) => {
+                    console.log(err);
+                });;
             return items;
         },
 
-        sparqlQuery: async function(query) {
+        sparqlQuery: async function (query) {
+            await checkStat();
             let { type, items } = await store.sparql(query)
-            .catch((err) => {
-                console.log(err);
-            });;
+                .catch((err) => {
+                    console.log(err);
+                });;
             return items;
         },
 
-        destroy: async function() {
+        destroy: async function () {
+            await checkStat();
             let { items } = await store.get({})
                 .catch((err) => {
                     console.log(err);
