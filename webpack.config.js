@@ -69,7 +69,7 @@ module.exports = {
         port: 8000, // Defaults to 8080
         proxy: {
             '^/*': {
-                target: 'http://localhost:5020/',
+                target: 'http://localhost:5000/',
                 secure: false
             }
         }

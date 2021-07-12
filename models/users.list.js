@@ -13,7 +13,7 @@ var UserList = function(){
         loadUserByName: async function(name){
             let queryData = await usrConnect.read(name);
             let usr;
-
+            
             if (queryData) {
                 usr = new User(JSON.parse(queryData));
                 return usr;
@@ -28,7 +28,6 @@ var UserList = function(){
                 uName: usr,
                 uPwd: crypt.encrypt(pwd)
             }
-
             let user = new User(props);
 
             await usrConnect.serialize(user);

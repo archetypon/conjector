@@ -64,3 +64,5 @@ typings/
 db/friends/
 db/rdf/
 private/
+public/scripts
+public/css

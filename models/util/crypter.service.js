@@ -1,9 +1,8 @@
-const config = require('../../private/crypto_secret.json');
 const crypto = require('crypto');
+const rsg = require('./random.string.generator');
 
-const { secret } = config;
 const algorithm = 'aes-256-cbc';
-const key = secret;
+const key = process.env.CRYPTO_SERVICE || rsg.randomString(32);
 const iv = crypto.randomBytes(16);
 
 function encrypt(text) {

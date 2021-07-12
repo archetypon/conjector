@@ -1,10 +1,12 @@
 const expressJwt = require('express-jwt');
-const config = require('../../private/token_credentials.json');
+const rsg = require('../../models/util/random.string.generator');
+
+const rndSec = rsg.randomString(12);
 
 module.exports = jwt;
 
 function jwt() {
-    const { secret } = config;
+    const secret = process.env.TOKEN_CREDENTIAL || rndSec;
     return expressJwt({ secret, 
         getToken: function(req) {
             let token = req.cookies['_id.jtoken'];

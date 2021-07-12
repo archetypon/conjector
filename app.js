@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
@@ -14,7 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(jwt());
 
 app.use('/', viewsServer);
@@ -29,13 +30,12 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
 
   if (err.name === 'UnauthorizedError') {
-    //res.status(401).send('invalid token...');
     res.redirect(301, '/login');
   }
 
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = process.env.NODE_ENV === 'development' ? err : {};
 
   // render the error page
   res.status(err.status || 500);

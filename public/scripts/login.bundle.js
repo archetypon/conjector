@@ -57054,7 +57054,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/main.css */ "./src/css/main.css");
 
 
-document.addEventListener("DOMContentLoaded", (0,_services_DOMManipulator__WEBPACK_IMPORTED_MODULE_0__.loadMenu)());
 document.addEventListener("DOMContentLoaded", (0,_services_DOMManipulator__WEBPACK_IMPORTED_MODULE_0__.loadLogin)());
 })();
 
