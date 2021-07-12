@@ -1,8 +1,9 @@
-const config = require('../../private/token_credentials.json');
 const jwt = require('jsonwebtoken');
 
 const UserList = require('../../models/users.list');
-const { secret } = config;
+
+const rndSec = rsg.randomString(12);
+const secret = process.env.TOKEN_CREDENTIAL || rndSec;
 
 var users = new UserList();
 
